@@ -10,16 +10,32 @@ categories:
     label: removed
   - title: ⚠️ Deprecated
     label: deprecated
+  # Various tags are used in the repositories, https://github.com/toolmantim/release-drafter/issues/218
   - title: 🚀 New features and improvements
     label: enhancement
+  - title: 🚀 New features and improvements
+    label: feature
+  # Various tags are used in the repositories, https://github.com/toolmantim/release-drafter/issues/218
+  - title: 🐛 Bug Fixes
+    label: bug
+  - title: 🐛 Bug Fixes
+    label: fix
   - title: 🐛 Bug Fixes
     label: bugfix
+  - title: 🐛 Bug Fixes
+    label: regression  
   - title: 📝 Documentation updates
     label: documentation
+  # Default label used by Dependabot
   - title: 📦 Dependency updates
     label: dependencies
+  - title: 👻 Maintenance
+    label: chore
+  # TODO: consider merging category or changing emojis
   - title: 🚦 Internal changes
     label: internal
+  - title: 🚦 Tests
+    label: test
 exclude-labels:
   - reverted
   - no-changelog
