@@ -60,7 +60,7 @@ There are some considerations about the default configuration:
 2. Release a component as usual (e.g. using Maven Release Plugin for Jenkins plugins)
 3. Go to `${YOUR_REPO}/releases` and click "Edit" on the draft release. 
 4. Edit the tag, point it to a tag or a release commit created by the common release flow
-** Tags represent a text field wit auto-completion. Tag names can be also copy-pasted from `${YOUR_REPO}/tags`
+** Tags represent a text field with auto-completion. Tag names can be also copy-pasted from `${YOUR_REPO}/tags`
 ** Recent commits can be selected from a dropdown
 5. Edit the release name, if needed
 6. Review and copy-edit the changelog
