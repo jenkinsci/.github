@@ -1,0 +1,95 @@
+Release Drafter
+===============
+
+link:https://github.com/toolmantim/release-drafter[Release Drafter] is a tool and GitHub app which helps to automate management of releases notes.
+Basically, this tool generates changelog drafts using pull request metadata (commit headers, links, etc.) and then suggest a changelog draft in GitHub Releases.
+Jenkins project offers some tools which simplify usage of Release Drafter in the https://github.com/jenkinsci/ organization.
+This page provides some usage information.
+
+:toc:
+
+== Usage
+
+=== Enabling Release Drafter in a repository
+
+NOTE: Release Drafter requires full write, because GitHub does not offer a limited scope for only writing releases. 
+**Don't install Release Drafter to your entire GitHub account — only add the repositories you want to draft releases on.**
+
+Release Drafter can be enabled as a GitHub action or as a GitHub Actions step.
+In the Jenkins organization we recommend using the GitHub app at the moment.
+
+* If you have an Admin access to the GitHub repo, you can just configure the application on https://github.com/apps/release-drafter
+* Otherwise, create an INFRA ticket with `component=github` for enabling Release Drafter in the repo
+
+=== Configuring Release Drafter
+
+After enabling the application, it needs to be configured in `.github/release-drafter.yml` in the master branch of your repository.
+Jenkins project provides a link:./release-drafter.yml[Global Configuration file], so a minimal configuration looks like this one:
+
+```yml
+_extends: .github
+#FIXME: change role-strategy to your component
+tag-template: role-strategy-$NEXT_MINOR_VERSION
+```
+
+All global settings can be overridden in repositories.
+Or you can write your own configuration from scratch if needed.
+See the link:https://github.com/toolmantim/release-drafter/blob/master/README.md[Release Drafter Documentation] for guidelines.
+If a change you need is a common use-case for Jenkins, it is recommended to submit a pull request to the link:./release-drafter.yml[Global Configuration file] 
+
+==== Global configuration notes
+
+There are some considerations about the default configuration:
+
+* Default tag template (tag-template) always needs to be configured by the user, 
+ because Maven Release Plugin in Plugin POM uses the ${artifactId}-${version} tag format by default. 
+ It needs to be overridden in repos (see the linked examples)
+* Jenkins plugins use different versioning format. 
+  Release Drafter defaults to link:https://semver.org/[semver], but the majority of Jenkins plugins uses the two-digit version number. 
+  We use it as a default in the global configuration, but it can be overridden (e.g. `version-template: $MAJOR.$MINOR.$PATCH`)
+* Next version number will be used by default as a next release name.
+  Another naming template can be defined by a `name-template` property, e.g. `name-template: My Plugin v$NEXT_PATCH_VERSION`
+* There are automatic replacers for Jenkins JIRA ticket IDs, CVE IDs and some acronyms.
+  Current replacer regexps target the common `[JENKINS-1234] - Change description` pull request patterns with some deviations 
+  (missing brackets, spacing and so on)
+
+=== Releasing a component with Release Drafter
+
+1. Make sure that all pull requests in the release are properly labeled.
+   See the link:./release-drafter.yml[Global Configuration file] for available labels
+2. Release a component as usual (e.g. using Maven Release Plugin for Jenkins plugins)
+3. Go to `${YOUR_REPO}/releases` and click "Edit" on the draft release. 
+4. Edit the tag, point it to a tag or a release commit created by the common release flow
+** Tags represent a text field with auto-completion. Tag names can be also copy-pasted from `${YOUR_REPO}/tags`
+** Recent commits can be selected from a dropdown
+5. Edit the release name, if needed
+6. Review and copy-edit the changelog
+** First release draft will likely contain all history from the beginning of the repository,
+   you will need to remove entries corresponding to PRs included in prior releases.
+   If all new PRs are categorized, just delete everything before the first header.
+** Release drafter is designed to add one entry per pull request.
+   If a pull request includes multiple changes to be noted, manual editing will be needed
+7. Click the _Publish_ button
+
+== Examples
+
+Below you can find examples of changelogs with enabled Release Drafter.
+Configurations can be found in ".github/release-drafter.yml" for every repo.
+
+=== Plugins
+
+* link:https://github.com/jenkinsci/configuration-as-code-plugin/releases[Configuration-as-Code Plugin]
+* link:https://github.com/jenkinsci/blueocean-plugin/releases[BlueOcean Plugin]
+* link:https://github.com/jenkinsci/role-strategy-plugin/releases[Role Strategy Plugin]
+* link:https://github.com/jenkinsci/slack-plugin/releases[Slack Plugin]
+
+=== Other components
+
+* link:https://github.com/jenkinsci/plugin-pom/releases[Jenkins Plugin POM]
+* link:https://github.com/jenkinsci/jenkins-test-harness/releases[Jenkins Test Harness]
+* link:https://github.com/jenkinsci/jenkinsfile-runner/releases[Jenkinsfile Runner]
+
+== Links
+
+* link:https://github.com/toolmantim/release-drafter/blob/master/README.md[Release Drafter Documentation]
+* link:https://groups.google.com/forum/#!searchin/jenkinsci-dev/release$20drafter%7Csort:date/jenkinsci-dev/dOs8YRQwQiI/dtHYRTSuBwAJ[Developer mailing list discussion]
