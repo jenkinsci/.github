@@ -15,7 +15,7 @@ This page provides some usage information.
 NOTE: Release Drafter requires full write, because GitHub does not offer a limited scope for only writing releases. 
 **Don't install Release Drafter to your entire GitHub account — only add the repositories you want to draft releases on.**
 
-Release Drfater can be enabled as a GitHub action or as a GitHub Actions step.
+Release Drafter can be enabled as a GitHub action or as a GitHub Actions step.
 In the Jenkins organization we recommend using the GitHub app at the moment.
 
 * If you have an Admin access to the GitHub repo, you can just configure the application on https://github.com/apps/release-drafter
@@ -23,7 +23,7 @@ In the Jenkins organization we recommend using the GitHub app at the moment.
 
 === Configuring Release Drafter
 
-After enabling the application, it cneeds to be configured in `.github/release-drafter.yml` in the master branch of your repository.
+After enabling the application, it needs to be configured in `.github/release-drafter.yml` in the master branch of your repository.
 Jenkins project provides a link:./release-drafter.yml[Global Configuration file], so a minimal configuration looks like this one:
 
 ```yml
@@ -46,19 +46,21 @@ There are some considerations about the default configuration:
  It needs to be overridden in repos (see the linked examples)
 * Jenkins plugins use different versioning format. 
   Release Drafter defaults to link:https://semver.org/[semver], but the majority of Jenkins plugins uses the two-digit version number. 
-  We use it as a default in the glocal configuration, but it can be overridden (e.g. `version-template: $MAJOR.$MINOR.$PATCH`)
-* There are automatic replacers for Jenkins JIRA ticket IDs, CVE IDs and some acronyms
-  Current replacer regexps target the common "[JENKINS-1234] - Change description" pull request patterns with some deviations 
+  We use it as a default in the global configuration, but it can be overridden (e.g. `version-template: $MAJOR.$MINOR.$PATCH`)
+* There are automatic replacers for Jenkins JIRA ticket IDs, CVE IDs and some acronyms.
+  Current replacer regexps target the common `[JENKINS-1234] - Change description` pull request patterns with some deviations 
   (missing brackets, spacing and so on)
 
 === Releasing a component with Release Drafter
 
 1. Make sure that all pull requests in the release are properly labeled.
    See the link:./release-drafter.yml[Global Configuration file] for available labels
-2. Release a component as usual (e.g. using Mavent Releas Plugin for Jenkins plugins)
+2. Release a component as usual (e.g. using Maven Release Plugin for Jenkins plugins)
 3. Go to https://github.com/jenkinsci/archetypes/releases and click "Edit" the draft. 
    First release is maybe complicated to all the history from the beginning of the repo.
-4. Remove old PRs. If all new ones are categorized, just delete everything before the first header
+4. Since the draft of the first release likely contains all history from the beginning of the repository,
+   you will need to remove entries corresponding to PRs included in prior releases.
+   If all new PRs are categorized, just delete everything before the first header.
 5. Edit the tag, point it to the release tag
 6. Edit the release name (can be automated in repo settings)
 7. Click the _Publish_ button
