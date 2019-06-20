@@ -47,6 +47,8 @@ There are some considerations about the default configuration:
 * Jenkins plugins use different versioning format. 
   Release Drafter defaults to link:https://semver.org/[semver], but the majority of Jenkins plugins uses the two-digit version number. 
   We use it as a default in the global configuration, but it can be overridden (e.g. `version-template: $MAJOR.$MINOR.$PATCH`)
+* Next version number will be used by default as a next release name.
+  Another naming template can be defined by a `name-template` property, e.g. `name-template: My Plugin v$NEXT_PATCH_VERSION`
 * There are automatic replacers for Jenkins JIRA ticket IDs, CVE IDs and some acronyms.
   Current replacer regexps target the common `[JENKINS-1234] - Change description` pull request patterns with some deviations 
   (missing brackets, spacing and so on)
@@ -56,13 +58,17 @@ There are some considerations about the default configuration:
 1. Make sure that all pull requests in the release are properly labeled.
    See the link:./release-drafter.yml[Global Configuration file] for available labels
 2. Release a component as usual (e.g. using Maven Release Plugin for Jenkins plugins)
-3. Go to https://github.com/jenkinsci/archetypes/releases and click "Edit" the draft. 
-   First release is maybe complicated to all the history from the beginning of the repo.
-4. Since the draft of the first release likely contains all history from the beginning of the repository,
+3. Go to `${YOUR_REPO}/releases` and click "Edit" on the draft release. 
+4. Edit the tag, point it to a tag or a release commit created by the common release flow
+** Tags represent a text field wit auto-completion. Tag names can be also copy-pasted from `${YOUR_REPO}/tags`
+** Recent commits can be selected from a dropdown
+5. Edit the release name, if needed
+6. Review and copy-edit the changelog
+** First release draft will likely contain all history from the beginning of the repository,
    you will need to remove entries corresponding to PRs included in prior releases.
    If all new PRs are categorized, just delete everything before the first header.
-5. Edit the tag, point it to the release tag
-6. Edit the release name (can be automated in repo settings)
+** Release drafter is designed to add one entry per pull request.
+   If a pull request includes multiple changes to be noted, manual editing will be needed
 7. Click the _Publish_ button
 
 == Examples
