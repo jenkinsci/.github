@@ -1,7 +1,7 @@
 Global configurations for the jenkinsci GitHub organization
 ====
 
-This repository is a repository for global GitHub configurations which then get applied to the project repositories.
+This repository stores GitHub configurations which then get applied to the project repositories.
 It includes various settings for GitHub itself, GitHub applications, and other components.
 See [this thread](https://groups.google.com/forum/#!topic/jenkinsci-dev/dOs8YRQwQiI) for details.
 
@@ -9,8 +9,8 @@ See [this thread](https://groups.google.com/forum/#!topic/jenkinsci-dev/dOs8YRQw
 
 Currently the following features are configured globally:
 
-* [Code of Conduct](./CODE_OF_CONDUCT.md) - Automatic referncing of Code of Conduct when creating new issues or PRs
-* [Security Links](./SECURITY.md) - Automatic referncing of Jenkins security policies when creating new issues or PRs
+* [Code of Conduct](./CODE_OF_CONDUCT.md) - Automatic referncing of Code of Conduct when creating new issues or pull requests
+* [Security Links](./SECURITY.md) - Automatic referncing of Jenkins security policies when creating new issues or pull requests
 * [Release Drafter](./.github/release-drafter.adoc) - Changelog automation
 
 ## Contacting Jenkins GitHub admins
@@ -26,5 +26,5 @@ Jenkins JIRA and mailing lists are the recommended ways to send queries.
 
 ## Contributing
 
-* To change existing configurations, just submit a pull requests
-* To propose new configurations (new GitHub Apps and so on), please start a discussion in the [Jenkins developer mailing list](https://groups.google.com/d/forum/jenkinsci-dev) to get the community feedback
+* To change existing configurations, just submit a pull request
+* To propose a new configuration (new GitHub Apps and so on), please start a discussion in the [Jenkins developer mailing list](https://groups.google.com/d/forum/jenkinsci-dev) to get the community feedback
