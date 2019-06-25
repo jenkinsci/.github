@@ -1,12 +1,15 @@
 Release Drafter
 ===============
 
+:toc:
+:toc-placement!:
+
 link:https://github.com/toolmantim/release-drafter[Release Drafter] is a tool and GitHub app which helps to automate management of releases notes.
 Basically, this tool generates changelog drafts using pull request metadata (commit headers, links, etc.) and then suggest a changelog draft in GitHub Releases.
 Jenkins project offers some tools which simplify usage of Release Drafter in the https://github.com/jenkinsci/ organization.
 This page provides some usage information.
 
-:toc:
+toc::[]
 
 == Usage
 
