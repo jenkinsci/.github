@@ -31,7 +31,9 @@ categories:
   - title: 🚦 Internal changes
     label: internal
   - title: 🚦 Tests
-    label: test
+    labels: 
+      - test
+      - tests
 exclude-labels:
   - reverted
   - no-changelog
