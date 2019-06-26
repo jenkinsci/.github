@@ -10,12 +10,10 @@ categories:
     label: removed
   - title: ⚠️ Deprecated
     label: deprecated
-  # Various tags are used in the repositories, https://github.com/toolmantim/release-drafter/issues/218
   - title: 🚀 New features and improvements
     labels:
       - enhancement
       - feature
-  # Various tags are used in the repositories, https://github.com/toolmantim/release-drafter/issues/218
   - title: 🐛 Bug Fixes
     labels:
       - bug
