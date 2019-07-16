@@ -1,0 +1,13 @@
+Getting support for Jenkins
+===========================
+
+Jenkins is a community-driven project, and it does not provide user support in common means.
+Nevertheless, there is an active community which might be able to help with the issues you experience.
+The [Jenkins JIRA](https://issues.jenkins-ci.org/secure/Dashboard.jspa) is **NOT** a support site. 
+If you need assistance or have general questions, visit us in [chat](https://jenkins.io/chat/), or email one of the user [mailing lists](https://jenkins.io/mailing-lists/).
+Please be aware that most of the Jenkins components are maintained by volunteers. 
+This means, there is no guarantee of the timely response and/or issue resolution.
+
+If you want to get a commercial support for Jenkins with SLA,
+there are companies which offer it.
+Check out [this Wiki page](https://wiki.jenkins.io/display/JENKINS/Commercial+Support) for the list.
