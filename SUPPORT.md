@@ -7,8 +7,9 @@ The [Jenkins JIRA](https://issues.jenkins-ci.org/secure/Dashboard.jspa) is **NOT
 If you need assistance or have general questions, visit us in [chat](https://jenkins.io/chat/), or email one of the user [mailing lists](https://jenkins.io/mailing-lists/).
 Also check out the main component's page for specific communication channel references.
 
-Please be aware that most of the Jenkins components are maintained by volunteers. 
-This means, there is no guarantee of a timely response or issue resolution.
+Please be aware that most Jenkins components are maintained by volunteers. 
+This means there is no guarantee of a timely response or issue resolution.
 If you want commercial support for Jenkins,
 there are companies which offer it.
-See [this Wiki page](https://wiki.jenkins.io/display/JENKINS/Commercial+Support).
+See the list on [this Wiki page](https://wiki.jenkins.io/display/JENKINS/Commercial+Support).
+Note that this list should not be viewed as endorsement by the Jenkins project, the list is provided for reference.
