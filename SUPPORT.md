@@ -8,7 +8,7 @@ If you need assistance or have general questions, visit us in [chat](https://jen
 Also check out the main component's page for specific communication channel references.
 
 Please be aware that most of the Jenkins components are maintained by volunteers. 
-This means, there is no guarantee of the timely response and/or issue resolution.
-If you want to get a commercial support for Jenkins with SLA,
+This means, there is no guarantee of a timely response or issue resolution.
+If you want commercial support for Jenkins,
 there are companies which offer it.
-Check out [this Wiki page](https://wiki.jenkins.io/display/JENKINS/Commercial+Support) for the list.
+See [this Wiki page](https://wiki.jenkins.io/display/JENKINS/Commercial+Support).
