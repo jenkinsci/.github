@@ -6,6 +6,10 @@ version-template: $MAJOR.$MINOR
 
 # Emoji reference: https://gitmoji.carloscuesta.me/
 categories:
+  - title: :boom: Breaking changes
+    labels: 
+      - breaking
+      - breaking-change
   - title: 🚨 Removed
     label: removed
   - title: ⚠️ Deprecated
