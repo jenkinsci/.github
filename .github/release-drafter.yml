@@ -9,7 +9,6 @@ categories:
   - title: :boom: Breaking changes
     labels: 
       - breaking
-      - breaking-change
   - title: 🚨 Removed
     label: removed
   - title: ⚠️ Deprecated
