@@ -6,7 +6,7 @@ version-template: $MAJOR.$MINOR
 
 # Emoji reference: https://gitmoji.carloscuesta.me/
 categories:
-  - title: :boom: Breaking changes
+  - title: ":boom: Breaking changes"
     labels: 
       - breaking
   - title: 🚨 Removed
