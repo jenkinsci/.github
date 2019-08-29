@@ -65,3 +65,5 @@ replacers:
     replace: 'Jenkinsfile Runner'
   - search: 'CWP'
     replace: 'Custom WAR Packager'
+  - search: '@dependabot-preview'
+    replace: '@dependabot'
