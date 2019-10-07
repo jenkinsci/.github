@@ -29,10 +29,9 @@ categories:
   - title: 📦 Dependency updates
     label: dependencies
   - title: 👻 Maintenance
-    label: chore
-  # TODO: consider merging category or changing emojis
-  - title: 🚦 Internal changes
-    label: internal
+    labels: 
+      - chore
+      - internal
   - title: 🚦 Tests
     labels: 
       - test
