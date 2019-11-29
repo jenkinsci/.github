@@ -111,6 +111,14 @@ There are some considerations about the default configuration:
    If a pull request includes multiple changes to be noted, manual editing will be needed
 7. Click the _Publish_ button
 
+== Jenkins Online Meetup Recording
+
+On Nov 22, 2019 we have recorded a Jenkins Online Meetup with the overview of Release Drafter in Jenkins:
+
+* link:https://docs.google.com/presentation/d/16T5IkmVKQPrjjizMHeTk4c9w-LSFNve8Qrl5NXW8PAE/edit#slide=id.g757db77c90_0_177[Slides]
+* link:https://youtu.be/PaQsvli92XY?t=3801[Video]
+* link:https://www.meetup.com/Jenkins-online-meetup/events/266465039/[Meetup page]
+
 == Examples
 
 Below you can find examples of changelogs with enabled Release Drafter.
