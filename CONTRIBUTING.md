@@ -8,7 +8,7 @@ Check out [this page](https://jenkins.io/participate/) for more information and 
 Many plugins and components also define their own contributing guidelines and communication channels. 
 There is also a big number of [mailing lists](https://jenkins.io/mailing-lists/) and [chats](https://jenkins.io/chat/).
 
-| WARNING: This is a default CONTRIBUTING page for all repositories in Jenkins. Every plugin/component is its own sub-project which may deviate in its rules. Guidelines and channel links in repository CONTRIBUTING/README pages, if any, take precedence over this page. |
+| NOTE: This is a default CONTRIBUTING page for all repositories in Jenkins. Every plugin/component is its own sub-project which may deviate in its rules. Guidelines and channel links in repository CONTRIBUTING/README pages, if any, take precedence over this page. |
 | --- |
 
 ## Newcomers
