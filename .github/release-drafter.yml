@@ -58,6 +58,8 @@ replacers:
   # TODO(oleg_nenashev): Find a better way to reference issues
   - search: '/\[*SECURITY-(\d+)\]*\s*-*\s*/g'
     replace: '[SECURITY-$1](https://jenkins.io/security/advisories/) - '
+  - search: '/\[*JEP-(\d+)\]*\s*-*\s*/g'
+    replace: '[JEP-$1](https://github.com/jenkinsci/jep/tree/master/jep/$1) - '
   - search: '/CVE-(\d{4})-(\d+)/g'
     replace: 'https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-$1-$2'
   - search: 'JFR'
