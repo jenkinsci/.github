@@ -11,12 +11,20 @@ categories:
       - breaking
   - title: 🚨 Removed
     label: removed
+  - title: ":tada: Major features and improvements"
+    labels:
+      - major-enhancement
+      - major-rfe
+  - title: 🐛 Major bug fixes
+    labels:
+      - major-bug
   - title: ⚠️ Deprecated
     label: deprecated
   - title: 🚀 New features and improvements
     labels:
       - enhancement
       - feature
+      - rfe
   - title: 🐛 Bug Fixes
     labels:
       - bug
