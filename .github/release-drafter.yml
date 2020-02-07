@@ -56,6 +56,8 @@ exclude-labels:
 template: |
   <!-- Optional: add a release summary here -->
   $CHANGES
+  
+  All contributors: $CONTRIBUTORS
 
 replacers:
   - search: '/\[*JENKINS-(\d+)\]*\s*-*\s*/g'
