@@ -23,7 +23,10 @@ categories:
       - fix
       - bugfix
       - regression
-   # Default label used by Dependabot
+  - title: ":construction_worker: Changes for plugin developers"
+    labels:
+      - developer 
+  # Default label used by Dependabot
   - title: 📦 Dependency updates
     label: dependencies
   - title: 📝 Documentation updates
