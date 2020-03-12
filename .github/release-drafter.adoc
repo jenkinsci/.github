@@ -4,33 +4,33 @@ Release Drafter
 :toc-placement: preamble
 :toclevels: 3
 
-link:https://github.com/toolmantim/release-drafter[Release Drafter] is a tool and GitHub app which helps to automate management of releases notes.
-Basically, this tool generates changelog drafts using pull request metadata (commit headers, links, etc.) and then suggest a changelog draft in GitHub Releases.
+link:https://github.com/toolmantim/release-drafter[Release Drafter] is a tool and GitHub app which helps to automate the management of releases notes.
+This tool generates changelog drafts using pull request metadata (commit headers, links, etc.) and then suggest a changelog draft in GitHub Releases.
 Jenkins project offers some tools which simplify usage of Release Drafter in the https://github.com/jenkinsci/ organization.
-This page provides some usage information.
+This page provides information about how to use it.
 
 == Usage
 
 Release drafter can be used as a GitHub Application or as a GitHub action.
-It is up to the plugin maintainers to chose the way how they use Release Drafter.
+It is up to the plugin maintainers to choose the way how they use Release Drafter.
 The only notable difference is that GitHub Application does not produce logs which would be available to plugin maintainers,
 and hence it might be difficult to troubleshoot errors if they occur.
 
 === Enabling Release Drafter GitHub App in a repository
 
-NOTE: Release Drafter requires full write, because GitHub does not offer a limited scope for only writing releases. 
+NOTE: Release Drafter requires full write permissions because GitHub does not offer a limited-scope for only writing releases. 
 **Don't install Release Drafter to your entire GitHub account — only add the repositories you want to draft releases on.**
 
 Release Drafter can be enabled as a GitHub action or as a GitHub Actions step.
-In the Jenkins organization we recommend using the GitHub app at the moment.
+In the Jenkins organization, we recommend using the GitHub app at the moment.
 
-* If you have an Admin access to the GitHub repo, you can just configure the application on https://github.com/apps/release-drafter
+* If you have Admin access to the GitHub repo, you can just configure the application on https://github.com/apps/release-drafter
 * Otherwise, create an INFRA ticket with `component=github` for enabling Release Drafter in the repo
 
 === Enabling Release Drafter GitHub Action in a repository
 
 It is possible to use a standard Release Drafter as a GitHub action, see the documentation link:[here].
-For Jenkins there is also a link:https://github.com/oleg-nenashev/jenkins-release-drafter[oleg-nenashev/jenkins-release-drafter] fork which includes some fixes which have not been released in upstream yet.
+For Jenkins, there is also a link:https://github.com/oleg-nenashev/jenkins-release-drafter[oleg-nenashev/jenkins-release-drafter] fork which includes some fixes which have not been released in upstream yet.
 
 Sample configuration:
 
@@ -85,11 +85,11 @@ There are some considerations about the default configuration:
  because Maven Release Plugin in Plugin POM uses the ${artifactId}-${version} tag format by default. 
  It needs to be overridden in repos (see the linked examples)
 * Jenkins plugins use different versioning format. 
-  Release Drafter defaults to link:https://semver.org/[semver], but the majority of Jenkins plugins uses the two-digit version number. 
+  Release Drafter defaults to link:https://semver.org/[semver], but the majority of Jenkins plugins use the two-digit version number. 
   We use it as a default in the global configuration, but it can be overridden (e.g. `version-template: $MAJOR.$MINOR.$PATCH`)
 * Next version number will be used by default as a next release name.
   Another naming template can be defined by a `name-template` property, e.g. `name-template: My Plugin v$NEXT_PATCH_VERSION`
-* There are automatic replacers for Jenkins JIRA ticket IDs, CVE IDs and some acronyms.
+* There are automatic replacers for Jenkins JIRA ticket IDs, CVE IDs, and some acronyms.
   Current replacer regexps target the common `[JENKINS-1234] - Change description` pull request patterns with some deviations 
   (missing brackets, spacing and so on)
 
@@ -116,7 +116,7 @@ Watch this link:https://youtu.be/lphs-7s4NtQ[demo] of steps 3–7.
 
 == Jenkins Online Meetup Recording
 
-On Nov 22, 2019 we have recorded a Jenkins Online Meetup with the overview of Release Drafter in Jenkins:
+On Nov 22, 2019, we have recorded a Jenkins Online Meetup with the overview of Release Drafter in Jenkins:
 
 * link:https://docs.google.com/presentation/d/16T5IkmVKQPrjjizMHeTk4c9w-LSFNve8Qrl5NXW8PAE/edit#slide=id.g757db77c90_0_177[Slides]
 * link:https://youtu.be/PaQsvli92XY?t=3801[Video]
