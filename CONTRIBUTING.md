@@ -34,7 +34,7 @@ If you are a newcomer contributor and have any questions, please do not hesitate
 
 - For larger contributions create an issue for any required discussion	
 - Implement solution on a branch in your fork	
-- Make sure to include issue number (if created) in commit message, and make the message speak for itself	
+- Make sure to include issue ID (if created) in commit message, and make the message speak for itself	
 - Once you're done create a pull request and ask at least one of the maintainers for review	
   - Remember to title your pull request properly as it is used for release notes	
 
