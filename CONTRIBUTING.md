@@ -49,12 +49,9 @@ Prerequisites: _Java_ and _Maven_
   ```	
   - Use the alternate Java 8.	
 
-  ```shell	
-  export JAVA_HOME=`/usr/libexec/java_home -v 1.8`	
-  echo $JAVA_HOME	
-  ```	
-
-  ```text	
+  ```console	
+  $ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`	
+  $ echo $JAVA_HOME	
   /Library/Java/JavaVirtualMachines/jdk1.8.0_252.jdk/Contents/Home
   ```	
 
