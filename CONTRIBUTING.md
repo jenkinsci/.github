@@ -57,7 +57,7 @@ Prerequisites: _Java_ and _Maven_
 
 - Ensure Maven > 3.6.0 is installed and included in the PATH environment variable.	
 
-  ```	
+  ```shell
   mvn --version	
   ```	
 
