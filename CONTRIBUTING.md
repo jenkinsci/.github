@@ -11,13 +11,6 @@ Check out [this page](https://jenkins.io/participate/) for more information and 
 Many plugins and components also define their own contributing guidelines and communication channels. 
 There is also a big number of [mailing lists](https://jenkins.io/mailing-lists/) and [chats](https://jenkins.io/chat/).
 
-Whenever you report a problem please provide information about:	
-
-- Plugin version	
-- Jenkins version	
-- Operating system	
-- Description!	
-
 | NOTE: This is a default CONTRIBUTING page for all repositories in Jenkins. Every plugin/component is its own sub-project which may deviate in its rules. Guidelines and channel links in repository CONTRIBUTING/README pages, if any, take precedence over this page. |
 | --- |
 
@@ -40,12 +33,12 @@ If you are a newcomer contributor and have any questions, please do not hesitate
 
 ## Run Locally	
 
-Prerequisites: _Java_ and _Maven_
+Prerequisites: _Java_ and _Maven_, (some plugins use Gradle, you will just need Java if you're building a Gradle plugin).
 
 - Ensure Java 8 or 11 is available.	
 
-  ```shell	
-  java -version	
+  ```console	
+  $ java -version	
   ```	
   - Use the alternate Java 8.	
 
@@ -57,8 +50,8 @@ Prerequisites: _Java_ and _Maven_
 
 - Ensure Maven > 3.6.0 is installed and included in the PATH environment variable.	
 
-  ```shell
-  mvn --version	
+  ```console
+  $ mvn --version	
   ```	
 
 ### IDE configuration	
@@ -69,12 +62,8 @@ See [IDE configuration](https://jenkins.io/doc/developer/development-environment
 
 - Use the below commands.	
 
-```shell
-mvn install -P quick-build
-```
-
-```shell	
-mvn hpi:run	
+```console	
+$ mvn hpi:run	
 ```	
 
 ```text	
@@ -84,8 +73,10 @@ INFO: Jenkins is fully up and running
 
 - Open <http://localhost:8080/jenkins/> to test the plugin locally.
 
-Some plugins use multi module maven builds and you may need to change your `hpi:run` command to be run from the child directory.
+Some plugins use multi module maven builds and you may need to change your `hpi:run` command to be run from the child directory, and build the other modules first.
 
-```shell
-mvn -f plugin hpi:run
+
+```console
+$ mvn install -P quick-build
+$ mvn -f plugin hpi:run
 ```
