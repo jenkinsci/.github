@@ -1,5 +1,8 @@
 # Contributing
 
+<!-- START doctoc -->
+<!-- END doctoc -->
+
 **Never report security issues on GitHub, public Jira issues or other public channels (Gitter/Twitter/etc.), 	
 follow the instruction from [Jenkins Security](https://www.jenkins.io/security/#reporting-vulnerabilities) to 	
 report it on [Jenkins Jira](https://issues.jenkins-ci.org)**	
