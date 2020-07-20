@@ -18,30 +18,7 @@ and hence it might be difficult to troubleshoot errors if they occur.
 
 === Enabling Release Drafter GitHub Action in a repository
 
-Sample configuration:
-
-```yaml
-# Automates creation of Release Drafts using Release Drafter
-# More Info: https://github.com/jenkinsci/.github/blob/master/.github/release-drafter.adoc
-name: Release Management
-
-on:
-  push:
-    # branches to consider in the event; optional, defaults to all
-    branches:
-      - master
-
-jobs:
-  update_draft_release:
-    runs-on: ubuntu-latest
-    steps:
-      # Drafts your next Release notes as Pull Requests are merged into "master"
-      - uses: release-drafter/release-drafter@v5
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-Here is an example used in the link:https://github.com/jenkinsci/bitbucket-branch-source-plugin/blob/master/.github/workflows/release-management.yml[BitBucket Branch Source Plugin].
+Have a look to the sample configuration available in the link:https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/workflows/release-drafter.yml[Maven archetype].
 
 === Enabling Release Drafter GitHub App in a repository
 
