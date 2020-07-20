@@ -12,20 +12,9 @@ This page provides information about how to use it.
 == Usage
 
 Release drafter can be used as a GitHub Application or as a GitHub action.
-It is up to the plugin maintainers to choose the way how they use Release Drafter.
-The only notable difference is that GitHub Application does not produce logs which would be available to plugin maintainers,
+The recommended approach is to use the GitHub Action as the GitHub Application is link:https://github.com/release-drafter/release-drafter/blob/master/docs/github-app.md[deprecated] and won't receive new feature anymore.
+Also, the Application does not produce logs which would be available to plugin maintainers,
 and hence it might be difficult to troubleshoot errors if they occur.
-
-=== Enabling Release Drafter GitHub App in a repository
-
-NOTE: Release Drafter requires full write permissions because GitHub does not offer a limited-scope for only writing releases. 
-**Don't install Release Drafter to your entire GitHub account — only add the repositories you want to draft releases on.**
-
-Release Drafter can be enabled as a GitHub action or as a GitHub Actions step.
-In the Jenkins organization, we recommend using the GitHub app at the moment.
-
-* If you have Admin access to the GitHub repo, you can just configure the application on https://github.com/apps/release-drafter
-* Otherwise, create an INFRA ticket with `component=github` for enabling Release Drafter in the repo
 
 === Enabling Release Drafter GitHub Action in a repository
 
@@ -59,6 +48,19 @@ Examples:
 
 * Official Release drafter: link:https://github.com/jenkinsci/bitbucket-branch-source-plugin/blob/master/.github/workflows/release-management.yml[BitBucket Branch Source Plugin]
 * Customized Release Drafter: link:https://github.com/jenkinsci/gradle-plugin/blob/master/.github/workflows/release-drafter.yml[Gradle Plugin]
+
+=== Enabling Release Drafter GitHub App in a repository
+
+WARNING: This approach is now deprecated.
+Plugin developers are encouraged to use the GitHub Action.
+
+NOTE: Release Drafter requires full write permissions because GitHub does not offer a limited-scope for only writing releases. 
+**Don't install Release Drafter to your entire GitHub account — only add the repositories you want to draft releases on.**
+
+Release Drafter can be enabled as a GitHub action or as a GitHub Actions step.
+
+* If you have Admin access to the GitHub repo, you can just configure the application on https://github.com/apps/release-drafter
+* Otherwise, create an INFRA ticket with `component=github` for enabling Release Drafter in the repo
 
 
 === Configuring Release Drafter
