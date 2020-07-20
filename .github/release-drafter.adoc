@@ -12,7 +12,7 @@ This page provides information about how to use it.
 == Usage
 
 Release drafter can be used as a GitHub Application or as a GitHub action.
-The recommended approach is to use the GitHub Action as the GitHub Application is link:https://github.com/release-drafter/release-drafter/blob/master/docs/github-app.md[deprecated] and won't receive new feature anymore.
+The recommended approach is to use the GitHub Action as the GitHub App is link:https://github.com/release-drafter/release-drafter/blob/master/docs/github-app.md[deprecated] and won't receive new features anymore.
 Also, the Application does not produce logs which would be available to plugin maintainers,
 and hence it might be difficult to troubleshoot errors if they occur.
 
