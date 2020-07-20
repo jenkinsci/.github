@@ -18,9 +18,6 @@ and hence it might be difficult to troubleshoot errors if they occur.
 
 === Enabling Release Drafter GitHub Action in a repository
 
-It is possible to use a standard Release Drafter as a GitHub action, see the documentation link:[here].
-For Jenkins, there is also a link:https://github.com/oleg-nenashev/jenkins-release-drafter[oleg-nenashev/jenkins-release-drafter] fork which includes some fixes which have not been released in upstream yet.
-
 Sample configuration:
 
 ```yaml
@@ -44,10 +41,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-Examples:
-
-* Official Release drafter: link:https://github.com/jenkinsci/bitbucket-branch-source-plugin/blob/master/.github/workflows/release-management.yml[BitBucket Branch Source Plugin]
-* Customized Release Drafter: link:https://github.com/jenkinsci/gradle-plugin/blob/master/.github/workflows/release-drafter.yml[Gradle Plugin]
+Here is an example used in the link:https://github.com/jenkinsci/bitbucket-branch-source-plugin/blob/master/.github/workflows/release-management.yml[BitBucket Branch Source Plugin].
 
 === Enabling Release Drafter GitHub App in a repository
 
