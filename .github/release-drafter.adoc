@@ -18,7 +18,7 @@ and hence it might be difficult to troubleshoot errors if they occur.
 
 === Enabling Release Drafter GitHub Action in a repository
 
-Have a look to the sample configuration available in the link:https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/workflows/release-drafter.yml[Maven archetype].
+Have a look to the sample configuration available in the link:https://github.com/jenkinsci/slack-plugin/blob/master/.github/workflows/release-drafter.yml[Slack Plugin].
 
 === Enabling Release Drafter GitHub App in a repository
 
