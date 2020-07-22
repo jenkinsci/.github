@@ -12,53 +12,26 @@ This page provides information about how to use it.
 == Usage
 
 Release drafter can be used as a GitHub Application or as a GitHub action.
-It is up to the plugin maintainers to choose the way how they use Release Drafter.
-The only notable difference is that GitHub Application does not produce logs which would be available to plugin maintainers,
+The recommended approach is to use the GitHub Action as the GitHub App is link:https://github.com/release-drafter/release-drafter/blob/master/docs/github-app.md[deprecated] and won't receive new features anymore.
+Also, the Application does not produce logs which would be available to plugin maintainers,
 and hence it might be difficult to troubleshoot errors if they occur.
 
+=== Enabling Release Drafter GitHub Action in a repository
+
+Have a look to the sample configuration available in the link:https://github.com/jenkinsci/slack-plugin/blob/master/.github/workflows/release-drafter.yml[Slack Plugin].
+
 === Enabling Release Drafter GitHub App in a repository
+
+WARNING: This approach is now deprecated.
+Plugin developers are encouraged to use the GitHub Action.
 
 NOTE: Release Drafter requires full write permissions because GitHub does not offer a limited-scope for only writing releases. 
 **Don't install Release Drafter to your entire GitHub account — only add the repositories you want to draft releases on.**
 
 Release Drafter can be enabled as a GitHub action or as a GitHub Actions step.
-In the Jenkins organization, we recommend using the GitHub app at the moment.
 
 * If you have Admin access to the GitHub repo, you can just configure the application on https://github.com/apps/release-drafter
 * Otherwise, create an INFRA ticket with `component=github` for enabling Release Drafter in the repo
-
-=== Enabling Release Drafter GitHub Action in a repository
-
-It is possible to use a standard Release Drafter as a GitHub action, see the documentation link:[here].
-For Jenkins, there is also a link:https://github.com/oleg-nenashev/jenkins-release-drafter[oleg-nenashev/jenkins-release-drafter] fork which includes some fixes which have not been released in upstream yet.
-
-Sample configuration:
-
-```yaml
-# Automates creation of Release Drafts using Release Drafter
-# More Info: https://github.com/jenkinsci/.github/blob/master/.github/release-drafter.adoc
-name: Release Management
-
-on:
-  push:
-    # branches to consider in the event; optional, defaults to all
-    branches:
-      - master
-
-jobs:
-  update_draft_release:
-    runs-on: ubuntu-latest
-    steps:
-      # Drafts your next Release notes as Pull Requests are merged into "master"
-      - uses: oleg-nenashev/jenkins-release-drafter@v5.2.0-jenkins-4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-Examples:
-
-* Official Release drafter: link:https://github.com/jenkinsci/bitbucket-branch-source-plugin/blob/master/.github/workflows/release-management.yml[BitBucket Branch Source Plugin]
-* Customized Release Drafter: link:https://github.com/jenkinsci/gradle-plugin/blob/master/.github/workflows/release-drafter.yml[Gradle Plugin]
 
 
 === Configuring Release Drafter
