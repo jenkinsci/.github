@@ -5,6 +5,7 @@ tag-template: $NEXT_MINOR_VERSION
 version-template: $MAJOR.$MINOR
 
 # Emoji reference: https://gitmoji.carloscuesta.me/
+# If adding categories, please also update: https://github.com/jenkins-infra/jenkins-maven-cd-action/blob/master/action.yaml#L16
 categories:
   - title: 💥 Breaking changes
     labels: 
