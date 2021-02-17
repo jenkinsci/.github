@@ -5,13 +5,14 @@ tag-template: $NEXT_MINOR_VERSION
 version-template: $MAJOR.$MINOR
 
 # Emoji reference: https://gitmoji.carloscuesta.me/
+# If adding categories, please also update: https://github.com/jenkins-infra/jenkins-maven-cd-action/blob/master/action.yaml#L16
 categories:
-  - title: ":boom: Breaking changes"
+  - title: 💥 Breaking changes
     labels: 
       - breaking
   - title: 🚨 Removed
     label: removed
-  - title: ":tada: Major features and improvements"
+  - title: 🎉 Major features and improvements
     labels:
       - major-enhancement
       - major-rfe
@@ -31,7 +32,7 @@ categories:
       - fix
       - bugfix
       - regression
-  - title: ":construction_worker: Changes for plugin developers"
+  - title: 👷 Changes for plugin developers
     labels:
       - developer 
   # Default label used by Dependabot
