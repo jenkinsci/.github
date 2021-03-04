@@ -81,7 +81,7 @@ replacers:
     replace: '@dependabot'
 
 autolabeler:
-  - label: 'chore'
+  - label: 'documentation'
     files:
       - '*.md'
     branch:
@@ -96,4 +96,3 @@ autolabeler:
       - '/feature\/.+/'
     body:
       - '/JENKINS-[0-9]{1,4}/'
-
