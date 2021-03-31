@@ -1,0 +1,12 @@
+{
+    "name": "Publish a Jenkins plugin with Maven",
+    "description": "Continuous delivery for Jenkins plugins and components. For additional setup see jenkins.io/redirect/continuous-delivery-of-plugins",
+    "iconName": "jenkins",
+    "categories": [
+        "Deployment",
+        "Maven"
+    ],
+    "filePatterns": [
+        "pom.xml$"
+    ]
+}
