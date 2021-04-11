@@ -62,7 +62,7 @@ There are some considerations about the default configuration:
   We use it as a default in the global configuration, but it can be overridden (e.g. `version-template: $MAJOR.$MINOR.$PATCH`)
 * Next version number will be used by default as a next release name.
   Another naming template can be defined by a `name-template` property, e.g. `name-template: My Plugin v$NEXT_PATCH_VERSION`
-* There are automatic replacers for Jenkins JIRA ticket IDs, CVE IDs, and some acronyms.
+* There are automatic replacers for Jenkins Jira ticket IDs, CVE IDs, and some acronyms.
   Current replacer regexps target the common `[JENKINS-1234] - Change description` pull request patterns with some deviations 
   (missing brackets, spacing and so on)
 
