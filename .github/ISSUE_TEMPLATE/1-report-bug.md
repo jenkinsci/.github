@@ -14,13 +14,18 @@ Follow these instruction to report security issues: https://www.jenkins.io/secur
 
 Jenkins and plugins versions report:
 
+<details>
+  <summary>Click to expand!</summary>
+
 <!-- paste below the version report from https://www.jenkins.io/doc/book/system-administration/diagnosing-errors/#how-to-report-a-bug -->
 
 ```
 Copy/paste here....
 ```
 
-- What Operating System are you using (both controller, and any agents involved in the problem)?
+</details>
+
+What Operating System are you using (both controller, and any agents involved in the problem)?
 
 ```
 Paste here
