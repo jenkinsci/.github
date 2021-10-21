@@ -1,21 +1,13 @@
+## Build great things at any scale
 
 In a nutshell, Jenkins is the leading open-source automation server. 
-Built with Java, it provides over 1,800 [plugins](https://plugins.jenkins.io/) to support automating virtually anything, 
-so that humans can spend their time doing things machines cannot.
-Our motto is "Build great things at any scale".
-
-**Using Jenkins?** If so, you can find all the information here:
-
-* [Jenkins Website](https://www.jenkins.io/)
-* [Documentation](https://www.jenkins.io/doc/)
-* [Plugin Index](https://plugins.jenkins.io/)
+It provides over 1,800 [plugins](https://plugins.jenkins.io/) for many use cases so that humans can spend their time doing things machines cannot.
+Learn more: [Jenkins Website](https://www.jenkins.io/), [Documentation](https://www.jenkins.io/doc/), [Plugin Index](https://plugins.jenkins.io/)
 
 **Want to contribute?** There is a big community behind Jenkins, and we invite you to join us and participate.
-
-* [Connect to the Community](https://www.jenkins.io/participate/connect/) on social media and in chats/mailing lists
-* [Participate and Contribute](https://www.jenkins.io/participate/)
-* [Project Governance and Values](https://www.jenkins.io/project/governance/)
-* [Code of Conduct](https://www.jenkins.io/project/conduct/)
+[Connect to the Community](https://www.jenkins.io/participate/connect/) on social media and in chats/mailing lists,
+[participate and contribute](https://www.jenkins.io/participate/).
+See also our [Project Governance and Values](https://www.jenkins.io/project/governance/) and [Code of Conduct](https://www.jenkins.io/project/conduct/).
 
 **About this GitHub org**.
 This is the main GitHub organization of the Jenkins community.
