@@ -1,4 +1,3 @@
-[![][ButlerImage]](https://www.jenkins.io/)
 
 In a nutshell, Jenkins is the leading open-source automation server. 
 Built with Java, it provides over 1,800 [plugins](https://plugins.jenkins.io/) to support automating virtually anything, 
