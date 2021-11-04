@@ -13,5 +13,3 @@ See also our [Project Governance and Values](https://www.jenkins.io/project/gove
 This is the main GitHub organization of the Jenkins community.
 It includes repositories of the [Jenkins core](https://github.com/jenkinsci/jenkins), plugins, libraries and developer tools.
 You can learn more about the project structure on the [website](https://www.jenkins.io/participate/code/).
-
-[ButlerImage]: https://www.jenkins.io/sites/default/files/jenkins_logo.png
