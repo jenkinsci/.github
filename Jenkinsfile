@@ -1,5 +1,15 @@
-node('node') {
-    stage('Release drafter configuration validation') {
-        sh './scripts/validateReleaseDrafterConfiguration.sh'
+pipeline {
+    agent {
+        label 'node'
+    }
+    stages {
+        stage('Validate Release drafter config') {
+            steps {
+                dir('scripts') {
+                    sh 'npm install'
+                }
+                sh './scripts/validateReleaseDrafterConfiguration.sh'
+            }
+        }
     }
 }

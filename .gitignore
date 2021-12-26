@@ -1,2 +1,4 @@
 *.iml
 .idea/*
+schema.json
+node_modules/
