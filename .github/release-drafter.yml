@@ -44,6 +44,7 @@ categories:
     labels: 
       - chore
       - internal
+      - maintenance
   - title: 🚦 Tests
     labels: 
       - test
