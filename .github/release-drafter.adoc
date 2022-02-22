@@ -1,8 +1,8 @@
-Release Drafter
-===============
+= Release Drafter
 :toc:
 :toc-placement: preamble
 :toclevels: 3
+:icons: font
 
 link:https://github.com/toolmantim/release-drafter[Release Drafter] is a tool and GitHub app which helps to automate the management of releases notes.
 This tool generates changelog drafts using pull request metadata (commit headers, links, etc.) and then suggest a changelog draft in GitHub Releases.
@@ -16,34 +16,17 @@ The recommended approach is to use the GitHub Action as the GitHub App is link:h
 Also, the Application does not produce logs which would be available to plugin maintainers,
 and hence it might be difficult to troubleshoot errors if they occur.
 
-=== Enabling Release Drafter GitHub Action in a repository
-
-Have a look to the sample configuration available in the link:https://github.com/jenkinsci/slack-plugin/blob/master/.github/workflows/release-drafter.yml[Slack Plugin].
-
-=== Enabling Release Drafter GitHub App in a repository
-
-WARNING: This approach is now deprecated.
-Plugin developers are encouraged to use the GitHub Action.
-
-NOTE: Release Drafter requires full write permissions because GitHub does not offer a limited-scope for only writing releases. 
-**Don't install Release Drafter to your entire GitHub account — only add the repositories you want to draft releases on.**
-
-Release Drafter can be enabled as a GitHub action or as a GitHub Actions step.
-
-* If you have Admin access to the GitHub repo, you can just configure the application on https://github.com/apps/release-drafter
-* Otherwise, create an INFRA ticket with `component=github` for enabling Release Drafter in the repo
-
-
 === Configuring Release Drafter
 
-After enabling the application, it needs to be configured in `.github/release-drafter.yml` in the master branch of your repository.
+Release drafter needs to be configured in `.github/release-drafter.yml` in the default branch of your repository.
 Jenkins project provides a link:./release-drafter.yml[Global Configuration file], so a minimal configuration looks like this one:
 
-```yml
+[source,yml]
+----
 _extends: .github
 #FIXME: change role-strategy to your component
 tag-template: role-strategy-$NEXT_MINOR_VERSION
-```
+----
 
 All global settings can be overridden in repositories.
 Or you can write your own configuration from scratch if needed.
@@ -55,7 +38,7 @@ If a change you need is a common use-case for Jenkins, it is recommended to subm
 There are some considerations about the default configuration:
 
 * Default tag template (tag-template) always needs to be configured by the user, 
- because Maven Release Plugin in Plugin POM uses the ${artifactId}-${version} tag format by default. 
+ because Maven Release Plugin in Plugin POM uses the `${artifactId}-${version}` tag format by default.
  It needs to be overridden in repos (see the linked examples)
 * Jenkins plugins use different versioning format. 
   Release Drafter defaults to link:https://semver.org/[semver], but the majority of Jenkins plugins use the two-digit version number. 
@@ -66,7 +49,11 @@ There are some considerations about the default configuration:
   Current replacer regexps target the common `[JENKINS-1234] - Change description` pull request patterns with some deviations 
   (missing brackets, spacing and so on)
 
-=== Releasing a component with Release Drafter
+=== Releasing a component via CD
+
+* If you have link:https://www.jenkins.io/doc/developer/publishing/releasing-cd/[automated plugin releases] configured, you can skip the paragraph below. CD handles manual releases differently.
+
+=== Manually releasing a component with Release Drafter
 
 1. Make sure that all pull requests in the release are properly labeled.
    See the link:./release-drafter.yml[Global Configuration file] for available labels
