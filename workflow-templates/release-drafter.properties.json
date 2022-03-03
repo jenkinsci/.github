@@ -1,0 +1,5 @@
+{
+  "name": "Publish changelogs to GitHub Releases",
+  "description": "Assemble a changelog based on pull requests with matching labels, if you don't publish releases via CD.",
+  "iconName": "jenkins"
+}
