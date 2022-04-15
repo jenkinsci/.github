@@ -32,6 +32,7 @@ categories:
       - fix
       - bugfix
       - regression
+      - regression-fix
   - title: 👷 Changes for plugin developers
     labels:
       - developer 
