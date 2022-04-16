@@ -11,7 +11,8 @@ categories:
     labels:
       - breaking
   - title: 🚨 Removed
-    label: removed
+    labels:
+      - removed
   - title: 🎉 Major features and improvements
     labels:
       - major-enhancement
@@ -20,7 +21,8 @@ categories:
     labels:
       - major-bug
   - title: ⚠️ Deprecated
-    label: deprecated
+    labels:
+      - deprecated
   - title: 🚀 New features and improvements
     labels:
       - enhancement
@@ -37,7 +39,8 @@ categories:
     labels:
       - developer
   - title: 📝 Documentation updates
-    label: documentation
+    labels:
+      - documentation
   - title: 👻 Maintenance
     labels:
       - chore
@@ -50,7 +53,8 @@ categories:
   - title: ✍ Other changes
   # Default label used by Dependabot
   - title: 📦 Dependency updates
-    label: dependencies
+    labels:
+      - dependencies
     collapse-after: 5
 exclude-labels:
   - reverted
