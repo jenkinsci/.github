@@ -8,7 +8,7 @@ version-template: $MAJOR.$MINOR
 # If adding categories, please also update: https://github.com/jenkins-infra/jenkins-maven-cd-action/blob/master/action.yaml#L16
 categories:
   - title: 💥 Breaking changes
-    labels: 
+    labels:
       - breaking
   - title: 🚨 Removed
     label: removed
@@ -35,21 +35,23 @@ categories:
       - regression-fix
   - title: 👷 Changes for plugin developers
     labels:
-      - developer 
-  # Default label used by Dependabot
-  - title: 📦 Dependency updates
-    label: dependencies
+      - developer
   - title: 📝 Documentation updates
     label: documentation
   - title: 👻 Maintenance
-    labels: 
+    labels:
       - chore
       - internal
       - maintenance
   - title: 🚦 Tests
-    labels: 
+    labels:
       - test
       - tests
+  - title: ✍ Other changes
+  # Default label used by Dependabot
+  - title: 📦 Dependency updates
+    label: dependencies
+    collapse-after: 5
 exclude-labels:
   - reverted
   - no-changelog
