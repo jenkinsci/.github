@@ -55,7 +55,7 @@ categories:
   - title: 📦 Dependency updates
     labels:
       - dependencies
-    collapse-after: 5
+    collapse-after: 15
 exclude-labels:
   - reverted
   - no-changelog
