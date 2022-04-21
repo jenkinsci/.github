@@ -35,6 +35,9 @@ categories:
       - bugfix
       - regression
       - regression-fix
+  - title: 🌐 Localization and Translation
+    labels:
+      - localization
   - title: 👷 Changes for plugin developers
     labels:
       - developer
