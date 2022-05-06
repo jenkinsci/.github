@@ -1,6 +1,6 @@
 # This workflow requires additional setup, see: TBD
 
-name: Crowdin Action
+name: Crowdin
 
 on:
   schedule:
