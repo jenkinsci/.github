@@ -1,0 +1,5 @@
+{
+  "name": "Crowdin Integration",
+  "description": "Integrate your plugin with crowdin.jenkins.io for a modern and web UI based translation flow.",
+  "iconName": "crowdin"
+}
