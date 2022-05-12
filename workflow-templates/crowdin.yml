@@ -1,4 +1,4 @@
-# This workflow requires additional setup, see: TBD
+# This workflow requires additional setup, see: https://jenkins.io/doc/developer/crowdin/
 
 name: Crowdin
 
