@@ -3,7 +3,7 @@ Global configurations for the jenkinsci GitHub organization
 
 This repository stores GitHub configurations which then get applied to the project repositories.
 It includes various settings for GitHub itself, GitHub applications, and other components.
-See [this thread](https://groups.google.com/forum/#!topic/jenkinsci-dev/dOs8YRQwQiI) for details.
+See [this thread](https://groups.google.com/g/jenkinsci-dev/c/dOs8YRQwQiI) for details.
 
 ## Available Global Configurations
 
@@ -21,10 +21,9 @@ Currently the following features are configured globally:
 
 The following channels can be used:
 
-* Jira - Create a ticket in [Jenkins Jira](https://issues.jenkins.io/) (project=`INFRA`, component=`github`)
-* Mailing lists - Use the [Jenkins Infrastructure mailing list](https://jenkins.io/mailing-lists/#infra-lists-jenkins-ci-org)
-* IRC - Use the [#jenkins-infra](https://jenkins.io/chat/#jenkins-infra) channel on Freenode
-* GitHub - Mention [@jenkinsci/github-admins](https://github.com/orgs/jenkinsci/teams/github-admins) in pull requests or GitHub issues. Available to org members only
+* Helpdesk - Open an issue on the [helpdesk](https://github.com/jenkins-infra/helpdesk/) (service=`GitHub`)
+* Mailing lists - Use the [Jenkins Infrastructure mailing list](https://groups.google.com/g/jenkins-infra)
+* GitHub - Mention [@jenkinsci/github-admins](https://github.com/orgs/jenkinsci/teams/github-admins) in pull requests or GitHub issues. Available to organization members only
 
 Jenkins Jira and mailing lists are the recommended ways to send queries.
 
