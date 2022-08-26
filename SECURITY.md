@@ -1,4 +1,6 @@
 # Security Policy
+# google policy
+# microsoft security
 
 The Jenkins project takes security seriously.
 We make every possible effort to ensure users can adequately secure their automation infrastructure.
