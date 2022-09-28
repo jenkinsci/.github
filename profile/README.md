@@ -14,7 +14,7 @@ This is the main GitHub organization of the Jenkins community.
 It includes repositories of the [Jenkins core](https://github.com/jenkinsci/jenkins), plugins, libraries and developer tools.
 You can learn more about the project structure on the [website](https://www.jenkins.io/participate/code/).
 
-# Hacktoberfest
+## Hacktoberfest
 
 <a href="https://www.jenkins.io/events/hacktoberfest/">
   <picture>
