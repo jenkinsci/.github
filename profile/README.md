@@ -25,4 +25,4 @@ You can learn more about the project structure on the [website](https://www.jenk
 <br/>
 
 The Jenkins community is participating in Hacktoberfest again, and we are looking for contributors and maintainers who want to join us in October!  
-Click [here](https://www.jenkins.io/events/hacktoberfest/) to learn more about this year's Hacktoberfest, and how to make your contributions towards the Jenkins project 🎉
+[Learn more about this year's Hacktoberfest](https://www.jenkins.io/events/hacktoberfest/), and how to make your contributions towards the Jenkins project 🎉
