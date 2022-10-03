@@ -18,10 +18,11 @@ You can learn more about the project structure on the [website](https://www.jenk
 
 <a href="https://www.jenkins.io/events/hacktoberfest/">
   <picture>
-      <source width="400" media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/13383509/192602080-715854aa-eaeb-442c-b208-9b5595a7c376.svg">
-      <img width="400" src="https://user-images.githubusercontent.com/13383509/192601744-52ccbb5e-3d51-4f07-b76d-2fc927bfacfb.svg">
+      <source width="200" media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/13383509/192602080-715854aa-eaeb-442c-b208-9b5595a7c376.svg">
+      <img width="200" src="https://user-images.githubusercontent.com/13383509/192601744-52ccbb5e-3d51-4f07-b76d-2fc927bfacfb.svg">
   </picture>
 </a>
+<br/>
 <br/>
 
 The Jenkins community is participating in Hacktoberfest again, and we are looking for contributors and maintainers who want to join us in October!  
