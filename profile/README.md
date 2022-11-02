@@ -14,16 +14,3 @@ This is the main GitHub organization of the Jenkins community.
 It includes repositories of the [Jenkins core](https://github.com/jenkinsci/jenkins), plugins, libraries and developer tools.
 You can learn more about the project structure on the [website](https://www.jenkins.io/participate/code/).
 
-## Hacktoberfest
-
-<a href="https://www.jenkins.io/events/hacktoberfest/">
-  <picture>
-      <source width="200" media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/13383509/192602080-715854aa-eaeb-442c-b208-9b5595a7c376.svg">
-      <img width="200" src="https://user-images.githubusercontent.com/13383509/192601744-52ccbb5e-3d51-4f07-b76d-2fc927bfacfb.svg">
-  </picture>
-</a>
-<br/>
-<br/>
-
-The Jenkins community is participating in Hacktoberfest again, and we are looking for contributors and maintainers who want to join us in October!  
-[Learn more about this year's Hacktoberfest](https://www.jenkins.io/events/hacktoberfest/), and how to make your contributions [towards the Jenkins project](https://github.com/search?o=desc&q=topic%3Ahacktoberfest+org%3Ajenkins-infra+org%3Ajenkinsci+fork%3Atrue&s=updated&type=Repositories "repositories participating in Hacktoberfest") 🎉
