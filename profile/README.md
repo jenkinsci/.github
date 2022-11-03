@@ -19,4 +19,4 @@ We are excited to announce the 2022 Jenkins Governance Board elections! The nomi
 
 These roles are crucial to the expanding community and continued progress of Jenkins. This is an opportunity for Jenkins contributors and community members to sign up to vote in elections, and acknowledge other community members by nominating them for a position.
 
-See [the announcement blogpost](https://www.jenkins.io/blog/2022/10/20/jenkins-election-announcement/) for more details how to register for voting and nominate candidates
+See [the announcement blogpost](https://www.jenkins.io/blog/2022/10/20/jenkins-election-announcement/) for more details how to register for voting and nominate candidates.
