@@ -14,7 +14,7 @@ This is the main GitHub organization of the Jenkins community.
 It includes repositories of the [Jenkins core](https://github.com/jenkinsci/jenkins), plugins, libraries and developer tools.
 You can learn more about the project structure on the [website](https://www.jenkins.io/participate/code/).
 
-**Jenkins Board and Officer Elections 2022**
+### 🗳️ Jenkins Board and Officer Elections 2022
 We are excited to announce the 2022 Jenkins Governance Board elections! The nomination and voter registration period is now open. Nominations can be submitted for [two governance board](https://www.jenkins.io/project/board) positions, and all [five officer](https://www.jenkins.io/project/team-leads/) positions (Security, Events, Release, Infrastructure, and Documentation).
 
 These roles are crucial to the expanding community and continued progress of Jenkins. This is an opportunity for Jenkins contributors and community members to sign up to vote in elections, and acknowledge other community members by nominating them for a position.
