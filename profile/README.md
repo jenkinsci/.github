@@ -16,4 +16,4 @@ You can learn more about the project structure on the [website](https://www.jenk
 
 ### 🗳️ Jenkins Board and Officer Elections 2022
 The 2022 Jenkins election results have been announced, there was one nominee for each role meaning those nominated have been elected!
-More info can be found in [the announcement blog post](https://www.jenkins.io/blog/2022/11/17/jenkins-election-candidates/)
+More info can be found in [the announcement blog post](https://www.jenkins.io/blog/2022/11/17/jenkins-election-candidates-and-results/)
