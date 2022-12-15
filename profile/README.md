@@ -9,6 +9,7 @@ Learn more: [Jenkins Website](https://www.jenkins.io/), [Documentation](https://
 The Jenkins artifact repository, [repo.jenkins-ci.org](https://repo.jenkins-ci.org/), will be upgraded beginning Sunday, December 18, 2022 at 9:00 AM UTC.
 Downtime is expected to be 6 hours or less.
 More information is available on [status.jenkins.io](https://status.jenkins.io/issues/2022-12-09-artifactory-maintenance/) and in the [announcement blog post](https://www.jenkins.io/blog/2022/12/09/jfrog-maintenance/).
+
 ---
 
 **Want to contribute?** There is a big community behind Jenkins, and we invite you to join us and participate.
