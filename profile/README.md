@@ -4,7 +4,6 @@ In a nutshell, Jenkins is the leading open-source automation server.
 It provides over 1,800 [plugins](https://plugins.jenkins.io/) for many use cases so that humans can spend their time doing things machines cannot.
 Learn more: [Jenkins Website](https://www.jenkins.io/), [Documentation](https://www.jenkins.io/doc/), [Plugin Index](https://plugins.jenkins.io/)
 
-
 **Want to contribute?** There is a big community behind Jenkins, and we invite you to join us and participate.
 [Connect to the Community](https://www.jenkins.io/participate/connect/) on social media and in chats/mailing lists,
 [participate and contribute](https://www.jenkins.io/participate/).
