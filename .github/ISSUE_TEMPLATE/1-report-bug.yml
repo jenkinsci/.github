@@ -17,6 +17,7 @@ body:
         ```groovy
         println("Jenkins: ${Jenkins.instance.getVersion()}")
         println("OS: ${System.getProperty('os.name')} - ${System.getProperty('os.version')}")
+        println("Java: ${System.getProperty('java.version')} - ${System.getProperty('java.vm.vendor')} (${System.getProperty('java.vm.name')})")
         println "---"
         
         Jenkins.instance.pluginManager.plugins
@@ -31,7 +32,6 @@ body:
         Jenkins: 2.326
         OS: Linux - 3.10.0-1160.45.1.el7.x86_64
         ---
-        ace-editor:1.1
         ant:1.13
         antisamy-markup-formatter:2.5
         apache-httpcomponents-client-4-api:4.5.13-1.0
