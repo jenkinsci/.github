@@ -14,17 +14,16 @@ This is the main GitHub organization of the Jenkins community.
 It includes repositories of the [Jenkins core](https://github.com/jenkinsci/jenkins), plugins, libraries and developer tools.
 You can learn more about the project structure on the [website](https://www.jenkins.io/participate/code/).
 
-
 ### Jenkins Contributor Awards 2023
 
-The annual Jenkins award  is happening now! It recognizes contributions from individuals in the community and the progress made in the name of Jenkins.
+The annual Jenkins awards is happening now! It recognizes contributions from individuals in the community and the progress made in the name of Jenkins.
 
 Nomination categories are:
-- Most Valuable Jenkins Advocate → Nominate Someone
-- Most Valuable Jenkins Contributor → Nominate Someone
-- Jenkins Security MVP → Nominate Someone
+- Most Valuable Jenkins Advocate → [Nominate Someone](https://github.com/jenkins-infra/jenkins.io/issues/6035)
+- Most Valuable Jenkins Contributor → [Nominate Someone](https://github.com/jenkins-infra/jenkins.io/issues/6033)
+- Jenkins Security MVP → [Nominate Someone](https://github.com/jenkins-infra/jenkins.io/issues/6034)
 
-Award timeline:
+Awards timeline:
 - Nominations close: Friday, March 3
 - Voting opens: Wednesday, March 8
 - Voting closes: Tuesday, March 28
