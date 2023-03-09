@@ -24,7 +24,7 @@ Nomination categories are:
 - Jenkins Security MVP → [Nominate Someone](https://github.com/jenkins-infra/jenkins.io/issues/6034)
 
 Awards timeline:
-- Nominations deadline: Friday, March 3 (Nominations closed)
+- Nominations deadline: Friday, March 3 (nominations closed)
 - Voting opens: Wednesday, March 8 ([voting form](https://docs.google.com/forms/d/e/1FAIpQLScUL4GAL-6wOjHKbT86ptKSStnglKM9_MKTQXzjgwimCDEtGw/viewform))
 - Voting closes: Tuesday, March 28
 - Winners announced at cdCon + GitOpsCon: May 8 – 9, 2023
