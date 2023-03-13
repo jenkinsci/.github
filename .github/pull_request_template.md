@@ -10,5 +10,5 @@
 <!--
 Put an `x` into the [ ] to show you have filled the information.
 The template comes from https://github.com/jenkinsci/.github/blob/master/.github/pull_request_template.md 
-You can override it by creating .github/pull_request_template.md  in your own repository 
+You can override it by creating .github/pull_request_template.md in your own repository 
 -->
