@@ -19,17 +19,17 @@ report it on [Jenkins Jira](https://issues.jenkins.io/)**
 
 In the Jenkins project we appreciate any kind of contributions: code, documentation, design, etc.
 Any contribution counts, and the size does not matter!
-Check out [this page](https://jenkins.io/participate/) for more information and links!
+Check out the [contributing page](https://jenkins.io/participate/) for more information and links!
 
 Many plugins and components also define their own contributing guidelines and communication channels. 
-There is also a big number of [mailing lists](https://jenkins.io/mailing-lists/) and [chats](https://jenkins.io/chat/).
+There is also a big number of [chat channels](https://jenkins.io/chat/) and threads on the [community forums](https://community.jenkins.io/).
 
 | NOTE: This is a default CONTRIBUTING page for all repositories in Jenkins. Every plugin/component is its own sub-project which may deviate in its rules. Guidelines and channel links in repository CONTRIBUTING/README pages, if any, take precedence over this page. |
 | --- |
 
 ## Newcomers
 
-If you are a newcomer contributor and have any questions, please do not hesitate to ask in the [Newcomers Gitter channel](https://gitter.im/jenkinsci/newcomer-contributors).
+If you are a newcomer contributor and have any questions, please do not hesitate to ask in the [Newcomers Gitter channel](https://app.gitter.im/#/room/#jenkinsci_newcomer-contributors:gitter.im).
 
 ## Useful links
 
@@ -46,30 +46,11 @@ If you are a newcomer contributor and have any questions, please do not hesitate
 
 ## Run Locally	
 
-Prerequisites: _Java_ and _Maven_, (some plugins use Gradle, you will just need Java if you're building a Gradle plugin).
-
-- Ensure Java 8 or 11 is available.	
-
-  ```console	
-  $ java -version	
-  ```	
-  - Use the alternate Java 8.	
-
-  ```console	
-  $ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`	
-  $ echo $JAVA_HOME	
-  /Library/Java/JavaVirtualMachines/jdk1.8.0_252.jdk/Contents/Home
-  ```	
-
-- Ensure Maven > 3.6.0 is installed and included in the PATH environment variable.	
-
-  ```console
-  $ mvn --version	
-  ```	
+The prerequisites for Java and Maven are documented on the [preparation](https://www.jenkins.io/doc/developer/tutorial/prepare/) page on jenkins.io.
 
 ### IDE configuration	
 
-See [IDE configuration](https://jenkins.io/doc/developer/development-environment/ide-configuration/)	
+See [IDE configuration](https://jenkins.io/doc/developer/development-environment/ide-configuration/).
 
 ### CLI	
 
