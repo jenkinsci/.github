@@ -11,8 +11,6 @@ If automated test coverage does not exist for the lines you are changing, you mu
 For frontend changes, include screenshots of the relevant page(s) before and after the change.
 For refactoring and code cleanup changes, exercise the code before and after the change and verify the behavior remains the same.
 -->
-
-
 ### Submitter checklist
 
 - [ ] Make sure you are opening from a **topic/feature/bugfix branch** (right side) and not your main branch!
