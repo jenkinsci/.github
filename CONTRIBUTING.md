@@ -1,7 +1,5 @@
 # Contributing
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
 - [Newcomers](#newcomers)
@@ -10,8 +8,6 @@
 - [Run Locally](#run-locally)
   - [IDE configuration](#ide-configuration)
   - [CLI](#cli)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 **Never report security issues on GitHub, public Jira issues or other public channels (Gitter/Twitter/etc.), 	
 follow the instruction from [Jenkins Security](https://www.jenkins.io/security/#reporting-vulnerabilities) to 	
