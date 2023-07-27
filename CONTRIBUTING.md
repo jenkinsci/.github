@@ -11,7 +11,7 @@
 
 **Never report security issues on GitHub, public Jira issues or other public channels (Gitter/Twitter/etc.), 	
 follow the instruction from [Jenkins Security](https://www.jenkins.io/security/#reporting-vulnerabilities) to 	
-report it on [Jenkins Jira](https://issues.jenkins.io/)**
+report it on [Jenkins Jira](https://issues.jenkins.io/).** For issues related to Jenkins infrastructure services, please report them on [Jenkins Infrastructure Help Desk](https://github.com/jenkins-infra/helpdesk/issues/).
 
 In the Jenkins project we appreciate any kind of contributions: code, documentation, design, etc.
 Any contribution counts, and the size does not matter!
