@@ -14,3 +14,8 @@ body:
     attributes:
       label: Upstream changes
       description: Link here any upstream changes that might be relevant to this request
+
+  - type: textarea
+    attributes:
+      label: Are you interested in contributing this feature?
+      description: Indicate if this is something you would like to work on, and how we can best support you in doing so. More details [on contributing](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md)

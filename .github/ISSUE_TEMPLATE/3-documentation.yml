@@ -13,3 +13,8 @@ body:
   - type: textarea
     attributes:
       label: Reference any relevant documentation, other materials or issues/pull requests that can be used for inspiration.
+
+  - type: textarea
+    attributes:
+      label: Are you interested in contributing to the documentation?
+      description: Indicate if this is something you would like to work on, and how we can best support you in doing so. More details [on contributing](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md)
