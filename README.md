@@ -21,7 +21,7 @@ Currently the following features are configured globally:
 
 The following channels can be used:
 
-* Helpdesk - Open an issue on the [helpdesk](https://github.com/jenkins-infra/helpdesk/) (service=`GitHub`)
+* Helpdesk - Open an issue on the [helpdesk](https://github.com/jenkins-infra/helpdesk/)
 * Mailing lists - Use the [Jenkins Infrastructure mailing list](https://groups.google.com/g/jenkins-infra)
 * GitHub - Mention [@jenkinsci/github-admins](https://github.com/orgs/jenkinsci/teams/github-admins) in pull requests or GitHub issues. Available to organization members only
 
