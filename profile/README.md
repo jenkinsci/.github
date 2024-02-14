@@ -30,6 +30,7 @@ Nomination categories are:
 Awards timeline:
 - Nominations close: February 19, 2024
 - Voting opens: February 22
+- Voting closes: March 22
 - Winners announced at cdCon 2024 on April 16 - 18, 2024
 
 See the [announcement blogpost](https://www.jenkins.io/blog/2024/01/29/nominate-someone-2024-jenkins-contributor-awards/) for more details for voting and nominate candidates.
