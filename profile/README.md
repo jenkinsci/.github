@@ -17,34 +17,3 @@ See also our [Project Governance and Values](https://www.jenkins.io/project/gove
 This is the main GitHub organization of the Jenkins community.
 It includes repositories of the [Jenkins core](https://github.com/jenkinsci/jenkins), plugins, libraries and developer tools.
 You can learn more about the project structure on the [website](https://www.jenkins.io/participate/code/).
-
-### Jenkins Contributor Awards 2024
-
-The annual Jenkins awards is happening now! It recognizes contributions from individuals in the community and the progress made in the name of Jenkins.  
-
-Nominated candidates are:
-- [Most Valuable Jenkins Advocate](https://github.com/jenkins-infra/jenkins.io/issues/7030):
-  - [Alexander Brandes](https://github.com/NotMyFault)
-  - [Bruno Verachten](https://github.com/gounthar)
-  - [Darin Pope](https://github.com/darinpope)
-  - [Kris Stern](https://github.com/krisstern)
-- [Most Valuable Jenkins Contributor](https://github.com/jenkins-infra/jenkins.io/issues/7028):
-  - [Basil Crow](https://github.com/basil)
-  - [Daniel Beck](https://github.com/daniel-beck)
-  - [Kris Stern](https://github.com/krisstern)
-  - [Stefan Spieker](https://github.com/StefanSpieker)
-  - [Tim Jacomb](https://github.com/timja)
-  - [Ullrich Hafner](https://github.com/uhafner)
-- [Jenkins Security MVP](https://github.com/jenkins-infra/jenkins.io/issues/7029):
-  - [Alvaro Muñoz](https://github.com/pwntester)
-  - [Yaniv Nizry](https://github.com/Yaniv-git)
-
-**📨 Vote now by filling out [this Google form](https://docs.google.com/forms/d/e/1FAIpQLScUHeNX-4H5jboVo6nRxo0-JtMiA8pLvMq2VkNYceax4frHPQ/viewform)!**
-
-Awards timeline:
-- Nominations close: February 19, 2024
-- Voting opens: February 22
-- Voting closes: March 22
-- Winners announced at cdCon 2024 on April 16 - 18, 2024
-
-See the [announcement blogpost](https://www.jenkins.io/blog/2024/01/29/nominate-someone-2024-jenkins-contributor-awards/) for more details.
