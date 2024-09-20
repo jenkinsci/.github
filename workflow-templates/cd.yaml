@@ -11,8 +11,8 @@ on:
         required: false
         type: boolean
         description: |
-          Run validation with release drafter only.
-          => Skip the release job
+          Run validation with release drafter only
+          → Skip the release job
         # Note: Change this default to true,
         #       if the checkbox should be checked by default.
         default: false
