@@ -1,5 +1,5 @@
 name: '📝 Documentation'
-labels: 'documentation'
+type: 'Documentation'
 description: 'Let us know if any documentation is missing or could be improved'
 
 body:
