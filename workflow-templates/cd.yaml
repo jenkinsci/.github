@@ -3,6 +3,7 @@
 # Please find additional hints for individual trigger use case
 # configuration options inline this script below.
 #
+---
 name: cd
 on:
   workflow_dispatch:
