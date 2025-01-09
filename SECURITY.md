@@ -6,7 +6,7 @@ To that end, we work with Jenkins core and plugin developers, as well as securit
 
 ## Reporting Security Vulnerabilities
 
-Please report security vulnerabilities in the Jenkins issue tracker under the [SECURITY project](https://issues.jenkins.io/browse/SECURITY).
+Please [report security vulnerabilities in the Jenkins issue tracker under the SECURITY project](https://issues.jenkins.io/secure/CreateIssueDetails!init.jspa?pid=10180&issuetype=10103).
 This project is configured in such a way that only the reporter and the security team can see the details.
 By restricting access to this potentially sensitive information, we can work on a fix and deliver it before the method of attack becomes well-known.
 
