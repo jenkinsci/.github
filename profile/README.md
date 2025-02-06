@@ -5,7 +5,7 @@
 [![Contribute](https://img.shields.io/static/v1?label=Contribute&message=jenkins.io/participate&color=orange)](https://www.jenkins.io/participate/)
 
 In a nutshell, Jenkins is the leading open-source automation server.
-It provides over 1,900 [plugins](https://plugins.jenkins.io/) for many use cases so that humans can spend their time doing things machines cannot.
+It provides over 2,000 [plugins](https://plugins.jenkins.io/) for many use cases so that humans can spend their time doing things machines cannot.
 Learn more: [Jenkins Website](https://www.jenkins.io/), [Documentation](https://www.jenkins.io/doc/), [Plugin Index](https://plugins.jenkins.io/)
 
 **Want to contribute?** There is a big community behind Jenkins, and we invite you to join us and participate.
