@@ -1,6 +1,5 @@
 Global configurations for the jenkinsci GitHub organization
-===
-
+====
 This repository stores GitHub configurations which then get applied to the project repositories.
 It includes various settings for GitHub itself, GitHub applications, and other components.
 See [this thread](https://groups.google.com/g/jenkinsci-dev/c/dOs8YRQwQiI) for details.
