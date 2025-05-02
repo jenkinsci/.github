@@ -19,22 +19,23 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: crowdin action
-        uses: crowdin/github-action@1.4.8
+        uses: crowdin/github-action@2.7.0
         with:
-          upload_translations: false
+          upload_translations: true
           download_translations: true
           skip_untranslated_files: true
+          auto_approve_imported: true
           push_translations: true
           export_only_approved: true
-          commit_message: 'New Crowdin translations'
+          commit_message: "New Crowdin translations"
           create_pull_request: true
-          pull_request_title: 'Update localization'
-          pull_request_labels: 'localization'
-          base_url: 'https://jenkins.crowdin.com'
-          config: 'crowdin.yml'
+          pull_request_title: "New Crowdin translations"
+          pull_request_labels: "enhancement"
+          base_url: "https://jenkins.crowdin.com"
+          config: "crowdin.yml"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CROWDIN_PROJECT_ID:  # Replace with your project ID
