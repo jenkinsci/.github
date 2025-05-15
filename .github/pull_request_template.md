@@ -18,7 +18,7 @@ For refactoring and code cleanup changes, exercise the code before and after the
 - [ ] Please describe what you did
 - [ ] Link to relevant issues in GitHub or Jira
 - [ ] Link to relevant pull requests, esp. upstream and downstream changes
-- [ ] Ensure you have provided tests - that demonstrates feature works or fixes the issue
+- [ ] Ensure you have provided tests that demonstrate the feature works or the issue is fixed
 
 <!--
 Put an `x` into the [ ] to show you have filled the information.
