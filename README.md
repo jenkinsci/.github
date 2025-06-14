@@ -16,6 +16,8 @@ Currently the following features are configured globally:
 * [Security Links](./SECURITY.md) - Automatic referencing of Jenkins security policies when creating new issues or pull requests
   ([more info](https://help.github.com/en/articles/creating-a-default-community-health-file-for-your-organization))
 * [Release Drafter](./.github/release-drafter.adoc) - Changelog automation
+* [Comment Ops](./.github/comment-ops.yml) – Enables GitHub bot commands like `/reviewer` via the [github-comment-ops](https://github.com/timja/github-comment-ops) app. Some repositories (e.g. [jenkinsci/jenkins](https://github.com/jenkinsci/jenkins/blob/master/.github/comment-ops.yml)) have additional commands such as auto-labeling enabled.
+* [Crowdin Translation Workflow](./workflow-templates/crowdin.yml) – Supports Jenkins' community translation process through Crowdin. Learn more in the [Jenkins Crowdin documentation](https://www.jenkins.io/doc/developer/crowdin/).
 
 ## Contacting Jenkins GitHub admins
 
