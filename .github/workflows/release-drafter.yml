@@ -5,6 +5,7 @@ name: Release Drafter
 
 on:
   workflow_call:
+  workflow_dispatch:
 
 jobs:
   update_release_draft:
