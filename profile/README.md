@@ -12,25 +12,3 @@ Learn more: [Jenkins Website](https://www.jenkins.io/), [Documentation](https://
 [Connect to the Community](https://www.jenkins.io/participate/connect/) on social media and in chats/mailing lists,
 [participate and contribute](https://www.jenkins.io/participate/).
 See also our [Project Governance and Values](https://www.jenkins.io/project/governance/) and [Code of Conduct](https://www.jenkins.io/project/conduct/).
-
-**About this GitHub org**.
-This is the main GitHub organization of the Jenkins community.
-It includes repositories of the [Jenkins core](https://github.com/jenkinsci/jenkins), plugins, libraries and developer tools.
-You can learn more about the project structure on the [website](https://www.jenkins.io/participate/code/).
-
-### Jenkins Contributor Awards 2025
-
-The annual Jenkins awards is happening now! It recognizes contributions from individuals in the community and the progress made in the name of Jenkins.
-
-Nomination categories are:
-- Most Valuable Jenkins Contributor → [Nominate Someone](https://github.com/jenkins-infra/jenkins.io/issues/7979)
-- Most Valuable Jenkins Advocate → [Nominate Someone](https://github.com/jenkins-infra/jenkins.io/issues/7981)
-- Jenkins Security MVP → [Nominate Someone](https://github.com/jenkins-infra/jenkins.io/issues/7980)
-
-Awards timeline:
-- Nominations close: April 14, 2025
-- Voting opens: April 22
-- Voting closes: June 5
-- Winners announced at [cdCon 2025](https://cd.foundation/cdcon-2025/) on June 23 - 25, 2025
-
-See the [announcement blogpost](https://www.jenkins.io/blog/2025/03/18/jenkins-contributor-awards-2025-nomination-is-open/) for more details for voting and nominate candidates.
