@@ -12,3 +12,8 @@ Learn more: [Jenkins Website](https://www.jenkins.io/), [Documentation](https://
 [Connect to the Community](https://www.jenkins.io/participate/connect/) on social media and in chats/mailing lists,
 [participate and contribute](https://www.jenkins.io/participate/).
 See also our [Project Governance and Values](https://www.jenkins.io/project/governance/) and [Code of Conduct](https://www.jenkins.io/project/conduct/).
+
+**About this GitHub org**.
+This is the main GitHub organization of the Jenkins community.
+It includes repositories of the [Jenkins core](https://github.com/jenkinsci/jenkins), plugins, libraries and developer tools.
+You can learn more about the project structure on the [website](https://www.jenkins.io/participate/code/).
