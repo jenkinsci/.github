@@ -72,7 +72,7 @@ template: |
 
 replacers:
   - search: '/\[*JENKINS-(\d+)\]*\s*-*\s*/g'
-    replace: '[JENKINS-$1](https://issues.jenkins.io/browse/JENKINS-$1) - '
+    replace: '[JENKINS-$1](https://github.com/jenkinsci/jenkins/issues?q=is%3Aissue%20JENKINS-$1) - '
   - search: '/\[*HELPDESK-(\d+)\]*\s*-*\s*/g'
     replace: '[HELPDESK-$1](https://github.com/jenkins-infra/helpdesk/issues/$1) - '
   # TODO(oleg_nenashev): Find a better way to reference issues

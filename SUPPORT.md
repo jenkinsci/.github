@@ -3,7 +3,7 @@ Getting support for Jenkins
 
 Jenkins is a community-driven project, and it does not provide user support in the common meaning.
 Nevertheless, there is an active community which might be able to help with the issues you experience.
-The [Jenkins Jira](https://issues.jenkins.io/) is **NOT** a support site.
+The [Jenkins issue tracker](https://github.com/jenkinsci/jenkins/issues) and the [Jenkins Jira](https://issues.jenkins.io/) are **NOT** support sites.
 If you need assistance or have general questions, visit us in [chat](https://jenkins.io/chat/), or email one of the user [mailing lists](https://jenkins.io/mailing-lists/).
 Also check out the main component's page for specific communication channel references.
 
