@@ -11,5 +11,5 @@ Please be aware that most Jenkins components are maintained by volunteers.
 This means there is no guarantee of a timely response or issue resolution.
 If you want commercial support for Jenkins,
 there are companies which offer it.
-See the list on [this Wiki page](https://wiki.jenkins.io/display/JENKINS/Commercial+Support).
+See the list on [this page](https://www.jenkins.io/support/#commercial-support-options).
 Note that this list should not be viewed as endorsement by the Jenkins project, the list is provided for reference.
