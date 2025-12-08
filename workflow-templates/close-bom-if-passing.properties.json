@@ -1,0 +1,11 @@
+{
+  "name": "Close BOM update PR if passing",
+  "description": "Automatically closes Dependabot pull requests updating the BOM (standardized plugin dependency versions) if tests pass. Normally these PRs should not be merged without a specific reason.",
+  "iconName": "octicon dependabot",
+  "categories": [
+    "dependency-management"
+  ],
+  "filePatterns": [
+    "pom.xml$"
+  ]
+}

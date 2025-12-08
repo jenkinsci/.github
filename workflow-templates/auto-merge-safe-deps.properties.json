@@ -1,0 +1,11 @@
+{
+  "name": "Automatically approve and merge safe dependency updates",
+  "description": "Allows GitHub Dependabot to automatically approve and merge dependency update pull requests affecting selected dependencies maintained by the Jenkins project and considered safe.",
+  "iconName": "octicon dependabot",
+  "categories": [
+    "dependency-management"
+  ],
+  "filePatterns": [
+    "pom.xml$"
+  ]
+}
