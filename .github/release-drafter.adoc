@@ -23,7 +23,7 @@ Jenkins project provides a link:./release-drafter.yml[Global Configuration file]
 
 [source,yml]
 ----
-_extends: .github
+_extends: github:jenkinsci/.github:/.github/release-drafter.yml
 #FIXME: change role-strategy to your component
 tag-template: role-strategy-$NEXT_MINOR_VERSION
 ----
