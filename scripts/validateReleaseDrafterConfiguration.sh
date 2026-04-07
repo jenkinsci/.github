@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 set -euox pipefail
 
 node --version
@@ -10,6 +9,10 @@ RELEASE_DRAFTER_CONFIG="$HERE/../.github/release-drafter.yml"
 
 echo "Validating release drafter configuration"
 
-node $HERE/fetch-schema.mjs
+node "$HERE/fetch-schema.mjs"
 
-$HERE/node_modules/.bin/ajv validate -s schema.json -d "${RELEASE_DRAFTER_CONFIG}"
+"$HERE/node_modules/.bin/ajv" validate \
+  --spec=draft2020 \
+  -c ajv-formats \
+  -s schema.json \
+  -d "${RELEASE_DRAFTER_CONFIG}"

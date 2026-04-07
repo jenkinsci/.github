@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ajv-cli": "^3.2.0",
+    "ajv": "^8.18.0",
+    "ajv-cli": "^5.0.0",
+    "ajv-formats": "^3.0.1",
     "node-fetch": "3.3.2"
   }
 }
