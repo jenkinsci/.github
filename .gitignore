@@ -1,4 +1,1 @@
-*.iml
-.idea/*
-schema.json
-node_modules/
+drops {  android_build_drop {    build_id: "6643574"    target: "kernel_debug_api"    source_file: "touch_core_base.ko"  }  dest_file: "debug_api/touch_core_base.ko"  version: "Linux version 4.4.223-g5a25c706f8f4-ab6643574 (android-build@abfarm-00978) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Jul 1 00:08:43 UTC 2020"  version_group: "kernel-and-modules"  git_project: "device/google/wahoo-kernel"}
