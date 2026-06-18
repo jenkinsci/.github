@@ -1,2 +1,1 @@
-community_bridge: jenkins
-custom: ["https://www.jenkins.io/donate/#why-donate"]
+custom: ["https://crowdfunding.linuxfoundation.org/initiatives/jenkins", "https://www.jenkins.io/donate/#why-donate"]
