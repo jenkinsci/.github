@@ -1,0 +1,46 @@
+= Dependabot
+
+WARNING: This page is under development. Contributions are welcome!
+
+In the Jenkins project we use https://dependabot.com/[Dependabot] for automating dependency updates in our repositories.
+It includes Java/Maven, Java/Gradle, JavaScript, Docker and other package manager types.
+Jenkins project repositories currently use the Github-native Dependabot and the deprecated standalone versions,
+migration is pending.
+
+This page documents jenkins-specific recommendations for using Dependabot in the Jenkins repositories.
+Please refer to the official https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/keeping-your-dependencies-updated-automatically[Dependabot documentation] for details and examples.
+
+== Documentation links
+
+* https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-and-disabling-version-updates#enabling-github-dependabot-version-updates[Enabling Dependabot in your repository]
+* https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuration-options-for-dependency-updates[Configuration file]
+* https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/#moving-forward-from-dependabot-com-and-dependabot-preview[Moving to GitHub-native Dependabot from Dependabot.com and dependabot-preview]
+
+== Usage recommendations for Jenkins plugins (Maven)
+
+* Make sure that you do not disable Maven Enforcer Plugin when using Dependabot.
+  Otherwise there will be a high risk of unnoticed dependency and binary compatibility conflicts.
+* It is **not recommended** to automatically update Jenkins core to the most recent versions, because it will prevent LTS users from using them.
+  See https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/[this page] for baseline selection recommendations.
+  You can configure a filter to prevent Dependabot from updating Jenkins core versions (see the examples)
+* There is a https://github.com/jenkinsci/bom/[Plugin Bill of Materials] which defines versions for many most used plugins.  
+  If you do not have a strong version requirements, it is recommended to supply the versions through BOM instead of letting Dependabot manage each dependency version.
+  It also reduces likelihood of upper bounds conflicts discovered by Maven Enforcer Plugin.
+* Be careful with library dependencies, especially for popular utility libraries.
+  Requiring recent versions may sometimes cause binary conflicts with other plugins and the core.
+
+== Jenkins component Configuration Examples
+
+* https://github.com/jenkinsci/jenkinsfile-runner/blob/master/.github/dependabot.yml[Jenkinsfile Runner] - Java/Maven example
+* https://github.com/jenkinsci/autograding-plugin/blob/master/.github/dependabot.yml[Autograding Plugin] - Java/Maven configuration for a plugin, with ignore filters
+
+NOTE: More examples will be added when project migrate to a GitHub-native Dependabot implementation with a v2 configuration format
+(`.github/dependabot.yml` files and configurations in GitHub project settings).
+
+== References
+
+* https://groups.google.com/forum/#!topic/jenkinsci-dev/XMllKuWLO_8[Developer Mailing List thread] - For discussion and proposals
+* https://speakerdeck.com/onenashev/joker-2019-tame-your-dependencies-with-dependabot[Tame your dependencies with Dependabot!] -
+  presentation about Dependabot adoption in the Jenkins project made in Oct, 2019.
+** Note: this presentation uses the old Dependabot version with obsolete configuration formats
+* https://docs.google.com/document/d/1hRrH8PSCswBQgY_Q-7eHCHCVZHJOl4XgQQCswdUmpKY/edit?usp=sharing[Dependabot Evaluation notes in Jenkins] - Additional random thoughts and takeaways
