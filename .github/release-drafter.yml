@@ -9,47 +9,58 @@ version-template: $MAJOR.$MINOR
 # If adding categories, please also update: https://github.com/jenkins-infra/jenkins-maven-cd-action/blob/master/action.yaml#L16
 categories:
   - title: 💥 Breaking changes
-    labels:
-      - breaking
+    when:
+      labels:
+        - breaking
   - title: 🚨 Removed
-    labels:
-      - removed
+    when:
+      labels:
+        - removed
   - title: 🎉 Major features and improvements
-    labels:
-      - major-enhancement
-      - major-rfe
+    when:
+      labels:
+        - major-enhancement
+        - major-rfe
   - title: 🐛 Major bug fixes
-    labels:
-      - major-bug
+    when:
+      labels:
+        - major-bug
   - title: ⚠️ Deprecated
-    labels:
-      - deprecated
+    when:
+      labels:
+        - deprecated
   - title: 🚀 New features and improvements
-    labels:
-      - enhancement
-      - feature
-      - rfe
+    when:
+      labels:
+        - enhancement
+        - feature
+        - rfe
   - title: 🐛 Bug fixes
-    labels:
-      - bug
-      - fix
-      - bugfix
-      - regression
-      - regression-fix
+    when:
+      labels:
+        - bug
+        - fix
+        - bugfix
+        - regression
+        - regression-fix
   - title: 🌐 Localization and translation
-    labels:
-      - localization
+    when:
+      labels:
+        - localization
   - title: 👷 Changes for plugin developers
-    labels:
-      - developer
+    when:
+      labels:
+        - developer
   - title: 📝 Documentation updates
-    labels:
-      - documentation
+    when:
+      labels:
+        - documentation
   - title: 👻 Maintenance
-    labels:
-      - chore
-      - internal
-      - maintenance
+    when:
+      labels:
+        - chore
+        - internal
+        - maintenance
   - title: 🚦 Tests
     labels:
       - test
@@ -57,8 +68,9 @@ categories:
   - title: ✍ Other changes
   # Default label used by Dependabot
   - title: 📦 Dependency updates
-    labels:
-      - dependencies
+    when:
+      labels:
+        - dependencies
     collapse-after: 15
 exclude-labels:
   - reverted
