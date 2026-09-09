@@ -72,11 +72,13 @@ categories:
       labels:
         - dependencies
     collapse-after: 15
-exclude-labels:
-  - reverted
-  - no-changelog
-  - skip-changelog
-  - invalid
+  - type: "pre-exclude"
+    when:
+      labels:
+        - reverted
+        - no-changelog
+        - skip-changelog
+        - invalid
 
 template: |
   <!-- Optional: add a release summary here -->
