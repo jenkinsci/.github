@@ -32,7 +32,7 @@ If you are a newcomer contributor and have any questions, please do not hesitate
 * [Jenkins: Participate and Contribute](https://jenkins.io/participate/)
 * [Slides: Contributing to Jenkins - it is all about you](https://docs.google.com/presentation/d/1JHgVzWZAx95IsUAZp8OoyCQGGkrCjzUd7eblwd1Y-hA/edit?usp=sharing)
 
-### Source code contribution ways of working	
+## Source code contribution ways of working
 
 - For larger contributions create an issue for any required discussion	
 - Implement solution on a branch in your fork	
