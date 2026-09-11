@@ -4,7 +4,7 @@
 
 - [Newcomers](#newcomers)
 - [Useful links](#useful-links)
-  - [Source code contribution ways of working](#source-code-contribution-ways-of-working)
+- [Source code contribution ways of working](#source-code-contribution-ways-of-working)
 - [Run Locally](#run-locally)
   - [IDE configuration](#ide-configuration)
   - [CLI](#cli)
@@ -32,13 +32,27 @@ If you are a newcomer contributor and have any questions, please do not hesitate
 * [Jenkins: Participate and Contribute](https://jenkins.io/participate/)
 * [Slides: Contributing to Jenkins - it is all about you](https://docs.google.com/presentation/d/1JHgVzWZAx95IsUAZp8OoyCQGGkrCjzUd7eblwd1Y-hA/edit?usp=sharing)
 
-### Source code contribution ways of working	
+## Source code contribution ways of working
 
 - For larger contributions create an issue for any required discussion	
 - Implement solution on a branch in your fork	
 - Make sure to include issue ID (if created) in commit message, and make the message speak for itself	
 - Once you're done create a pull request and ask at least one of the maintainers for review	
   - Remember to title your pull request properly as it is used for release notes	
+
+### Avoid some common mistakes
+
+**Do**
+- Use the repository pull request template
+- Read the repository contributing guide
+- Maintain the pull request until it is merged.  Respond constructively to reviewer feedback and automated reviews. Ideally, respond to post-merge bug reports
+- Respect each other's time. Many people contribute in their spare time
+- Prefer small pull requests
+
+**Do not**
+- Reformat lines that are not part of your feature or fix within your pull request
+- Commit unrelated files. Separate improvements should be separate pull requests
+- Apply your own standards (code structure or formatting, Maven plugins) that do not align with existing practices in the repository
 
 ## Run Locally	
 
