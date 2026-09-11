@@ -4,7 +4,7 @@
 
 - [Newcomers](#newcomers)
 - [Useful links](#useful-links)
-  - [Source code contribution ways of working](#source-code-contribution-ways-of-working)
+- [Source code contribution ways of working](#source-code-contribution-ways-of-working)
 - [Run Locally](#run-locally)
   - [IDE configuration](#ide-configuration)
   - [CLI](#cli)
