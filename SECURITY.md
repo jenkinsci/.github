@@ -14,6 +14,12 @@ If you are unable to report using our issue tracker, you can also send your repo
 
 The Jenkins security team will then file an issue on your behalf, and will work with the maintainers of the affected component(s) to get the issue resolved.
 
+## CRA Stewardship
+
+The Jenkins project is supported under the Linux Foundation stewardship framework for the EU Cyber Resilience Act (CRA).
+Our CRA steward is The Linux Foundation and its policy is available at [linuxfoundation.org/security](https://www.linuxfoundation.org/security).
+For actively exploited vulnerabilities or other security matters that may require CRA escalation, email `jenkinsci-cert@googlegroups.com` directly.
+
 ## Learn More
 
 For further details about our scope, issue handling process, or disclosure process, see [Reporting Security Vulnerabilities on jenkins.io](https://jenkins.io/security/reporting/).
