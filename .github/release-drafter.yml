@@ -62,9 +62,10 @@ categories:
         - internal
         - maintenance
   - title: 🚦 Tests
-    labels:
-      - test
-      - tests
+    when:
+      labels:
+        - test
+        - tests
   - title: ✍ Other changes
   # Default label used by Dependabot
   - title: 📦 Dependency updates
