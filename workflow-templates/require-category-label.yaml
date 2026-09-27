@@ -1,0 +1,47 @@
+name: Require Release Drafter category label
+
+on:
+  pull_request_target:
+    types: [opened, labeled, unlabeled, synchronize]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  check-label:
+    if: ${{ github.repository_owner == 'jenkinsci' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mheap/github-action-required-labels@23e10fde7e062233401931a0eece796cd9bf3177 # v5.6.0
+        with:
+          mode: minimum
+          count: 1
+          add_comment: true
+          message: "Missing required label for changelog. Requires {{errorString}} {{count}} of: {{ provided }}. Found: {{ applied }}."
+          labels: |
+            breaking
+            removed
+            major-enhancement
+            major-rfe
+            major-bug
+            deprecated
+            enhancement
+            feature
+            rfe
+            bug
+            fix
+            bugfix
+            regression
+            regression-fix
+            localization
+            developer
+            documentation
+            chore
+            internal
+            maintenance
+            test
+            tests
+            dependencies
+            no-changelog
+            skip-changelog
