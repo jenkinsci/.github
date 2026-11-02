@@ -1,0 +1,5 @@
+{
+  "name": "Require Release Drafter category label",
+  "description": "Fails a PR check if it has no label matching a Release Drafter category, so generated changelogs don't end up with uncategorized entries.",
+  "iconName": "jenkins"
+}
